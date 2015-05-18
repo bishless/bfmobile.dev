@@ -1,0 +1,442 @@
+//colors
+$color_silver_chalice_approx: #aaa;
+$color_mountain_mist_approx: #999;
+$color_log_cabin_approx: #222;
+$color_sail_approx: #b3d4fc;
+$color_celeste_approx: #ccc;
+$color_pomegranate_approx: #e44d26;
+$color_orange_bfco: rgba(190, 58, 52, 1);
+$color_flamingo_approx: #f16529;
+$color_orange_bfco_old: #ca3b14;
+$color_gray_light: #eeeeee;
+
+$nav_blue: rgb(4,61,81);
+$nav_blue_dark: rgb(4,47,62);
+$nav_blue_light: rgb(10,78,102);
+$nav_blue_teal: rgb(43,188,183);
+
+$teal-dark: #0A2F35;
+$teal: #627F87;
+
+//fonts
+$font_0: 'Source Sans Pro';
+$font_1: Helvetica Neue;
+$font_2: Arial;
+$font_3: 'Lato';
+
+
+%button {
+	display: block;
+	margin-bottom: 10px;
+	padding: 15px 0;
+	text-align: center;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+
+/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+
+html {
+	color: #222;
+	font-size: 1em;
+	line-height: 1.4;
+}
+
+::-moz-selection, ::selection {
+	background: #b3d4fc;
+	text-shadow: none;
+}
+
+hr {
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #ccc;
+	margin: 1em 0;
+	padding: 0;
+}
+
+audio, canvas, iframe, img, svg, video {
+	vertical-align: middle;
+}
+
+fieldset {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+textarea {
+	resize: vertical;
+}
+
+.browserupgrade {
+	margin: 0.2em 0;
+	background: #ccc;
+	color: #000;
+	padding: 0.2em 0;
+}
+
+/* ===== Initializr Styles ==================================================
+	 Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
+	 ========================================================================== */
+
+body {
+	font: 16px/26px $font_0, $font_1, $font_2;
+}
+
+.wrapper {
+	width: 90%;
+	margin: 0 5%;
+}
+
+/* ===================
+		ALL: Orange Theme
+	 =================== */
+
+.header-container {
+	border-bottom: 20px solid $color_orange_bfco;
+}
+
+.footer-container, .main aside {
+	border-top: 20px solid $color_orange_bfco;
+	background: $color_flamingo_approx;
+}
+
+.header-container {
+	background: white;
+}
+
+.title {
+	color: white;
+}
+
+/* ==============
+		MOBILE: Menu
+	 ============== */
+
+nav {
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+	}
+	a {
+		display: block;
+		margin-bottom: 10px;
+		padding: 15px 0;
+		text-align: center;
+		text-decoration: none;
+		font-weight: bold;
+		color: white;
+		background: $color_orange_bfco;
+		&:hover, &:visited {
+			color: white;
+		}
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
+/* ==============
+		MOBILE: Main
+	 ============== */
+
+.main {
+	padding: 30px 0;
+	article h1 {
+		font-size: 2em;
+	}
+	aside {
+		color: white;
+		padding: 0px 5% 10px;
+		margin-bottom: 20px;
+	}
+}
+
+.footer-container footer {
+	color: white;
+	padding: 20px 0;
+}
+
+/* ===============
+		ALL: IE Fixes
+	 =============== */
+
+.ie7 .title {
+	padding-top: 20px;
+}
+
+/* ==========================================================================
+	 Author's custom styles
+	 ========================================================================== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: $font_3, sans-serif;
+}
+
+h1.title {
+	width: 174px;
+	height: 62px;
+	background-image: url('//beachfleischman.com/wp-content/themes/rttheme11-up/images/logo_2x_n.png');
+	background-size: 174px 62px;
+	background-repeat: no-repeat;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.main-container {
+	background: lighten($teal, 10%);
+	color: $teal-dark;
+}
+
+.center {
+	text-align: center;
+}
+
+a.button {
+	@extend %button;
+	color: white;
+	background: $color_orange_bfco;
+}
+
+aside.location {
+	background: white;
+	
+	div.address {
+		display: inline;
+		
+		& > div {
+			display: inline;
+		}
+	}
+
+	h2 {
+		text-align: center;
+		color: $color_flamingo_approx;
+
+	}
+
+	ul {
+		margin-left: 0;
+		margin-right: 0;
+		padding-left: 0;
+	}
+
+	li {
+		background: rgba(255,0,204,0.5);
+		margin-bottom: 0.25em;
+		list-style-type: none;
+	}
+
+	a,
+	a:link,
+	a:visited {
+		@extend %button;
+		color: $teal;
+		background: $color_gray_light;
+	}
+}
+
+.toplink {
+	text-transform: uppercase;
+	text-decoration: none;
+	color: $color_gray_light;
+
+	&:hover {
+		color: white;
+	}
+}
+
+/* ==========================================================================
+	 Media Queries
+	 ========================================================================== */
+
+@media only screen and (min-width: 480px) {
+	/* ====================
+			INTERMEDIATE: Menu
+		 ==================== */
+	// h1.title { margin: 1em auto; }
+	nav {
+		a {
+			float: left;
+			width: 27%;
+			margin: 0 1.7%;
+			padding: 25px 2%;
+			margin-bottom: 0;
+		}
+		li {
+			&:first-child a {
+				margin-left: 0;
+			}
+			&:last-child a {
+				margin-right: 0;
+			}
+		}
+		ul li {
+			display: inline;
+		}
+	}
+	/* ========================
+			INTERMEDIATE: IE Fixes
+		 ======================== */
+	.oldie nav a {
+		margin: 0 0.7%;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	/* ====================
+			WIDE: CSS3 Effects
+		 ==================== */
+	.header-container,
+	.main aside {
+		box-shadow: 0 5px 10px $teal-dark;
+	}
+	/* ============
+			WIDE: Menu
+		 ============ */
+	.title {
+		float: left;
+	}
+	nav {
+		float: right;
+		width: 38%;
+	}
+	/* ============
+			WIDE: Main
+		 ============ */
+	.main {
+		article {
+			float: left;
+			width: 57%;
+		}
+		aside:not(.location) {
+			float: right;
+			width: 28%;
+		}
+	}
+}
+
+@media only screen and (min-width: 1140px) {
+	/* ===============
+			Maximal Width
+		 =============== */
+	.wrapper {
+		width: 1026px;
+		/* 1140px - 10% for margins */
+		margin: 0 auto;
+	}
+}
+
+/* ==========================================================================
+	 Helper classes
+	 ========================================================================== */
+
+.hidden {
+	display: none !important;
+	visibility: hidden;
+}
+
+.visuallyhidden {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+	&.focusable {
+		&:active, &:focus {
+			clip: auto;
+			height: auto;
+			margin: 0;
+			overflow: visible;
+			position: static;
+			width: auto;
+		}
+	}
+}
+
+.invisible {
+	visibility: hidden;
+}
+
+.clearfix {
+	&:before {
+		content: " ";
+		display: table;
+	}
+	&:after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+	*zoom: 1;
+}
+
+/* ==========================================================================
+	 Print styles
+	 ========================================================================== */
+
+@media print {
+	* {
+		background: transparent !important;
+		color: #000 !important;
+		box-shadow: none !important;
+		text-shadow: none !important;
+		&:before, &:after {
+			background: transparent !important;
+			color: #000 !important;
+			box-shadow: none !important;
+			text-shadow: none !important;
+		}
+	}
+	a {
+		text-decoration: underline;
+		&:visited {
+			text-decoration: underline;
+		}
+		&[href]:after {
+			content: " (" attr(href) ")";
+		}
+	}
+	abbr[title]:after {
+		content: " (" attr(title) ")";
+	}
+	a {
+		&[href^="#"]:after, &[href^="javascript:"]:after {
+			content: "";
+		}
+	}
+	pre, blockquote {
+		border: 1px solid #999;
+		page-break-inside: avoid;
+	}
+	thead {
+		display: table-header-group;
+	}
+	tr {
+		page-break-inside: avoid;
+	}
+	img {
+		page-break-inside: avoid;
+		max-width: 100% !important;
+	}
+	p, h2, h3 {
+		orphans: 3;
+		widows: 3;
+	}
+	h2, h3 {
+		page-break-after: avoid;
+	}
+}
