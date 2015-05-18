@@ -1,6 +1,10 @@
 {
   "name": "bfcomobile",
   "version": "2.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bishless/bfmobile.dev.git"
+  },
   "devDependencies": {
     "browser-sync": "^2.2.0",
     "gulp": "^3.8.11",
