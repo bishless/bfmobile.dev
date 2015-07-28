@@ -1,3 +1,5 @@
+@import 'normalize';
+
 //colors
 $color_silver_chalice_approx: #aaa;
 $color_mountain_mist_approx: #999;
@@ -19,10 +21,14 @@ $teal-dark: #0A2F35;
 $teal: #627F87;
 
 //fonts
-$font_0: 'Source Sans Pro';
-$font_1: Helvetica Neue;
+// $font_0: 'Source Sans Pro';
+$font_0: 'Segoe UI';
+$font_1: 'Helvetica Neue';
 $font_2: Arial;
 $font_3: 'Lato';
+
+$baseFontSize: 16px;
+$baseLineHeight: 26px;
 
 
 %button {
@@ -33,6 +39,15 @@ $font_3: 'Lato';
 	text-decoration: none;
 	font-weight: bold;
 }
+
+%icon {
+	fill: currentColor;
+}
+
+.material-icons.md-16 {
+	font-size: 16px;
+}
+
 
 
 /*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
@@ -83,7 +98,9 @@ textarea {
 	 ========================================================================== */
 
 body {
-	font: 16px/26px $font_0, $font_1, $font_2;
+	font-family: $font_0, $font_1, $font_2;
+	font-size: $baseFontSize;
+	line-height: $baseLineHeight;
 }
 
 .wrapper {
@@ -210,10 +227,10 @@ a.button {
 
 aside.location {
 	background: white;
-	
+
 	div.address {
 		display: inline;
-		
+
 		& > div {
 			display: inline;
 		}
@@ -221,6 +238,7 @@ aside.location {
 
 	h2 {
 		text-align: center;
+		text-transform: uppercase;
 		color: $color_flamingo_approx;
 
 	}
@@ -254,6 +272,33 @@ aside.location {
 	&:hover {
 		color: white;
 	}
+}
+
+.icon {
+	width: $baseLineHeight;
+	height: $baseLineHeight;
+	@extend %icon;
+}
+.icon-md {
+	width: 57px;
+	height: 57px;
+	@extend %icon;
+}
+.icon-lg {
+	width: 114px;
+	height: 114px;
+	@extend %icon;
+}
+.icon-xl {
+	width: 228px;
+	height: 228px;
+	@extend %icon;
+}
+.icon-right {
+	float: right;
+}
+.icon-left {
+	float: left;
 }
 
 /* ==========================================================================
@@ -301,6 +346,7 @@ aside.location {
 	.main aside {
 		box-shadow: 0 5px 10px $teal-dark;
 	}
+
 	/* ============
 			WIDE: Menu
 		 ============ */
