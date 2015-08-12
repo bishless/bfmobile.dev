@@ -1,6 +1,6 @@
 @import 'normalize';
 
-//colors
+/* colors */
 $color_silver_chalice_approx: #aaa;
 $color_mountain_mist_approx: #999;
 $color_log_cabin_approx: #222;
@@ -20,9 +20,9 @@ $nav_blue_teal: rgb(43,188,183);
 $teal-dark: #0A2F35;
 $teal: #627F87;
 
-//fonts
-// $font_0: 'Source Sans Pro';
-$font_0: 'Segoe UI';
+/* fonts */
+$font_0: 'Source Sans Pro';
+/*$font_0: 'Segoe UI';*/
 $font_1: 'Helvetica Neue';
 $font_2: Arial;
 $font_3: 'Lato';
@@ -202,7 +202,7 @@ h6 {
 h1.title {
 	width: 174px;
 	height: 62px;
-	background-image: url('//beachfleischman.com/wp-content/themes/rttheme11-up/images/logo_2x_n.png');
+	background-image: url('http://res.cloudinary.com/beachfleischman/image/upload/dpr_2.0,f_auto/v1429029243/logo_2x_n_bwrvgl.png');
 	background-size: 174px 62px;
 	background-repeat: no-repeat;
 	text-indent: 100%;
